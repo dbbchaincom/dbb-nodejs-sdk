@@ -1,0 +1,33 @@
+{
+  "title": "SDK Instantiation",
+  "description": "Input validation for the SDK instantiation object",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "updateOAuthFn": {
+      "description": "Callback function called when tokens are updated"
+    },
+    "tokensFailedCallbackFn": {
+      "description": "Callback function called when tokens are expired"
+    },
+    "oAuthTokens": {
+      "description": "Object with accessToken and refreshToken properties",
+      "type": [ "object" ]
+    },
+    "apiUrl": {
+      "description": "API Url definition",
+      "type": [ "string" ],
+      "format": "uri"
+    },
+    "notificationsUrl": {
+      "description": "Notifications Url definition",
+      "type": [ "string" ],
+      "format": "uri"
+    },
+    "investmentsUrl": {
+      "description": "Investments Url definition",
+      "type": [ "string" ],
+      "format": "uri"
+    }
+  }
+}

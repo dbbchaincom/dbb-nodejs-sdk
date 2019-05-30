@@ -1,0 +1,13 @@
+{
+  "title": "User Model - Username Search",
+  "description": "Schema definition for User Model - Username Search",
+  "additionalProperties": false,
+  "type": "object",
+  "properties": {
+    "username": {
+      "description": "The username",
+      "type": "string"
+    }
+  },
+  "required": [ "username" ]
+}

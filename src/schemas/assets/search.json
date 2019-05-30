@@ -1,0 +1,17 @@
+{
+  "title": "Assets Model - Search",
+  "description": "Schema definition for Asset Model - search method",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "walletId": {
+      "description": "The wallet ID",
+      "type": "string"
+    },
+    "query": {
+      "description": "The query string to search for",
+      "type": "string"
+    }
+  },
+  "required": [ "walletId", "query" ]
+}

@@ -1,0 +1,25 @@
+{
+    "title": "Connection Model - Disconnect",
+    "description": "Schema definition for Connection Model - disconnect method",
+    "additionalProperties": false,
+    "type": "object",
+    "properties": {
+      "targetUserId": {
+        "description": "The target user ID",
+        "type": "string"
+      },
+      "sourceUserAccessKey": {
+        "description": "The source user shared access key",
+        "type": "string"
+      },
+      "targetUserAccessKey": {
+        "description": "The target user shared access key",
+        "type": "string"
+      },
+      "walletId": {
+        "description": "The wallet ID",
+        "type": "string"
+      }
+    },
+    "required": [ "targetUserId", "sourceUserAccessKey", "targetUserAccessKey", "walletId" ]
+  }

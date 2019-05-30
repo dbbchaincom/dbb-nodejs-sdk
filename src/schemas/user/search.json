@@ -1,0 +1,17 @@
+{
+  "title": "User Model - Search",
+  "description": "Schema definition for User Model - search method",
+  "additionalProperties": false,
+  "type": "object",
+  "properties": {
+    "walletId": {
+      "description": "The wallet ID",
+      "type": "string"
+    },
+    "query": {
+      "description": "The query string to search for",
+      "type": "string"
+    }
+  },
+  "required": [ "walletId" , "query" ]
+}

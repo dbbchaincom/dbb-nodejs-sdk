@@ -1,0 +1,14 @@
+{
+  "title": "User Model - Upload Profile Image Form Data",
+  "description": "Schema definition for User Model - uploadProfileImageFormData method",
+  "additionalProperties": true,
+  "type": "object",
+  "properties": {
+    "walletId": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "walletId"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Wallet Model - Update",
+  "description": "Schema definition for Wallet Model - update method",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "walletId": {
+      "description": "The wallet ID",
+      "type": "string"
+    },
+    "ethAddress": {
+      "description": "The Ethereum address of one wallet",
+      "type": "string",
+      "pattern":"^0x[a-fA-F0-9]{40}$"
+    },
+    "fcmToken": {
+      "description": "The Firebase Cloud Messaging Token  of one wallet",
+      "type": "string"
+    },
+    "signalRegistrationId": {
+      "description": "The Signal registration ID",
+      "type": "string"
+    }
+  },
+  "required": [ "walletId", "fcmToken"]
+}

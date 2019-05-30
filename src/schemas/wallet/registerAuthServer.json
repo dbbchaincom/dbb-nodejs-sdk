@@ -1,0 +1,26 @@
+{
+  "title": "Wallet Model - Register Auth Server",
+  "description": "Schema definition for Wallet Model - registerAuthServer method",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "privateKey": {
+      "description": "Private Key buffer",
+      "type": "string",
+      "pattern":"[a-fA-F0-9]{64}$"
+    },
+    "fcmToken": {
+      "description": "The Firebase Cloud Messaging Token  of one wallet",
+      "type": "string"
+    },
+    "username": {
+      "description": "The unique username associated of one wallet",
+      "type": "string"
+    }
+  },
+  "required": [
+    "privateKey",
+    "fcmToken",
+    "username"
+  ]
+}
